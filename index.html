@@ -25,7 +25,7 @@
             <nav class="nav">
                 <a class="link-logo" href="./index.html"> <span class="logo-blue">Web</span>Studio</a>
                 <ul class="link-spc">
-                    <li class="link-spc-item"><a class="link-spc-link" href="./index.html">Studio</a></li>
+                    <li class="link-spc-item"><a class="link-spc-link current" href="./index.html">Studio</a></li>
                     <li class="link-spc-item"><a class="link-spc-link" href="./portfolio.html">Portfolio</a></li>
                     <li class="link-spc-item"><a class="link-spc-link" href="">Contacts</a></li>
                 </ul>
@@ -49,7 +49,7 @@
         <section class="section-main">
             <div class="container flex-containre">
                 <h1>Effective Solutions for Your Business</h1>
-                <button class="button main-section-button" type="button">Order Service</button>
+                <button data-modal-open class="button main-section-button" type="button">Order Service</button>
             </div>
         </section>
 
@@ -373,11 +373,93 @@
                     </li>
                 </ul>
             </div>
+<!-- FORM_FOOTER -->
+            <div class="cont-form-footer">
+                <p class="footel-lable">Subscribe</p>
+                <form class="footer-form" action="">
+                    <label class="footel-lable">
+                        <input class="footer-input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">
+                        Subscribe
+                        <svg class="footer-form-svg">
+                            <use href="../images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+<!-- FORM_FOOTER -->
+        
         </div>
     </footer>
 
+        <div class="backdrop is-hidden" data-modal >
+            <div class="modal">
+                <button data-modal-close class="modal-button" type="button">
+                    <svg class="icon-close">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            
+                <p class="model-text">Leave your contacts and we will call you back</p>
+<!-- form -->
+                <form class="modal-form" action="">
+
+                    <label class="label">
+                        Name
+                        <input  class="input" type="name" name="username" autofocus>
+                        <span>
+                            <svg class="form-svg">
+                                <use href=".//images/sprite.svg#icon-humen"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="label">
+                        Phone
+                        <input  class="input" type="phone" name="userphone">
+                        <span>
+                            <svg class="form-svg">
+                                <use href=".//images/sprite.svg#icon-phone"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="label">
+                        Email
+                        <input  class="input" type="email" name="usermail">
+                        <span>
+                            <svg class="form-svg">
+                                <use href=".//images/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </span>
+                    </label>
+
+                    <label class="label form-textarea">
+                        Comment
+                        <textarea class="input-textarea" name="" id="" width="360" height="120" placeholder="Text input"></textarea>
+                    </label>
+
+                    <label class="label-checkbox">
+                        <input class="checkbox visually-hidden" type="checkbox">
+                        <span class="checkbox-castom">
+                            <svg class="form-checkbox-icon">
+                                <use href="../images/sprite.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        <p class="checkbox-custom-text">I accept the terms and conditions of the <a class="label-checkbox-link" href="">Privacy Policy</a></p>
+                    </label>
+                
+                    <button class="form-button button" type="submit">Send</button>
+                    
+                </form>
+<!-- form -->
+            </div>
+        </div>
+
+<script src="../js/modal.js"></script>
 </body>
 </html>
 
 
-
+ 
