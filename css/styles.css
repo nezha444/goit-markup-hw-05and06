@@ -389,6 +389,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color 250ms var(--cubic);
 }
 
 
