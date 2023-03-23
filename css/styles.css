@@ -521,7 +521,7 @@ h1{
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-button{
@@ -549,7 +549,6 @@ h1{
 
 .model-text{
   margin-bottom: 16px;
-  margin-top: 48px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -616,7 +615,7 @@ textarea{
   padding-left: 38px;
   width: 360px;
   height: 40px;
-  border: 1px solid var(--color-navy-blue);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   margin-top: 4px;
   transition: border-color 250ms var(--cubic);
@@ -632,7 +631,7 @@ textarea{
   width: 360px;
   height: 120px;
   margin-top: 4px;
-  border: 1px solid var(--color-navy-blue);
+  border: 1px solid rgba(46, 47, 66, 0.4);;
   border-radius: 4px;
 }
 
